@@ -25,9 +25,9 @@ while chart.previousDate:
 lovelist = []
 for k, v in lovedic.items():
 	title, artist = k
-    for year, count in v.items():
-        lovelist.append([title, artist, year, count])
+	for year, count in v.items():
+		lovelist.append([title, artist, year, count])
 
 lovedf = pd.DataFrame(lovelist, columns = ["Title", "Artist", "Year", "Count"])
 
-pd.lovedf.to_csv("lovedf.csv")
+lovedf.to_csv("lovedf.csv")
